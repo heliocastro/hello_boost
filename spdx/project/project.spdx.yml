@@ -1,0 +1,38 @@
+SPDXID: SPDXRef-DOCUMENT
+creationInfo:
+  created: '2021-10-11T08:32:00Z'
+  creators:
+  - 'Person: Helio Chissini de Castro'
+  licenseListVersion: '8.19'
+dataLicense: CC0-1.0
+documentDescribes:
+- SPDXRef-Package-hello_boost
+documentNamespace: http://spdx.org/spdxdocs/spdx-document-hello_boost
+externalDocumentRefs:
+- checksum:
+    algorithm: SHA1
+    checksumValue: d6cefccdd75468652a6d023a68b3525f187bb192
+  externalDocumentId: DocumentRef-boost-1.71.0
+  spdxDocument: ../package/boost/package.spdx.yaml
+name: hello_boost-0.0.1
+packages:
+- SPDXID: SPDXRef-Package-hello_boost
+  copyrightText: Copyright (C) 2021 Helio Chissini de Castro
+  description: Boost downloader test
+  downloadLocation:
+  filesAnalyzed: false
+  homepage: https://www.heliocastro.info
+  licenseConcluded: MIT
+  licenseDeclared: MIT
+  name: hello_boost
+  originator: 'Person: Helio Chissini de Castro'
+  packageFileName: .
+  versionInfo: 0.0.1
+relationships:
+- relatedSpdxElement: SPDXRef-Package-hello_boost
+  relationshipType: BUILD_DEPENDENCY_OF
+  spdxElementId: DocumentRef-boost-1.71.0:SPDXRef-Package-boost
+- relatedSpdxElement: DocumentRef-boost-1.71.0:SPDXRef-Package-boost
+  relationshipType: STATIC_LINK
+  spdxElementId: SPDXRef-Package-hello_boost
+spdxVersion: SPDX-2.1
